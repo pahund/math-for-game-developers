@@ -1,12 +1,12 @@
 {
   "name": "math-for-game-developers",
   "version": "1.0.0",
-  "description": "",
+  "description": "Code examples for using mathematics for game development",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js"
   },
-  "author": "npmpublisher <pahund@ebay.com>",
+  "author": "Patrick Hund <wiekatz@gmail.com>",
   "license": "ISC"
 }
