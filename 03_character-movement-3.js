@@ -1,8 +1,7 @@
 /**
- * lesson3.js
+ * Video 3: Character Movement 3 (Vector Length)
  *
- * Character Movement 3 (Vector Length)
- * https://www.youtube.com/watch?v=bk-RyG0KR_I&index=3&list=PLW3Zl3wyJwWOpdhYedlD-yCB7WQoHf-My
+ * https://www.youtube.com/watch?v=bk-RyG0KR_I
  *
  * @author <a href="https://github.com/pahund">Patrick Hund</a>
  * @since 08 Jan 2016

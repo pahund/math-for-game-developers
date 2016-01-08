@@ -9,10 +9,13 @@
 const Vector = require("./Vector"),
     Point = require("./Point");
 
-require("./lesson1");
-require("./lesson2");
-require("./lesson3");
-require("./lesson4");
-require("./lesson5");
-require("./lesson6");
-require("./lesson7");
+require("./01_character-movement");
+require("./02_character-movement-2");
+require("./03_character-movement-3");
+require("./04_distance-comparison");
+require("./05_character-movement-4");
+require("./06_character-movement-5");
+require("./07_character-movement-6");
+// no code examples in video 8
+require("./09_backstabbing");
+

@@ -1,8 +1,7 @@
 /**
- * lesson1.js
+ * Video 1: Character Movement (Points and Vectors)
  *
- * Character Movement (Points and Vectors)
- * https://www.youtube.com/watch?v=sKCF8A3XGxQ&index=1&list=PLW3Zl3wyJwWOpdhYedlD-yCB7WQoHf-My
+ * https://www.youtube.com/watch?v=sKCF8A3XGxQ
  *
  * @author <a href="https://github.com/pahund">Patrick Hund</a>
  * @since 08 Jan 2016

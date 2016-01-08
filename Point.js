@@ -21,6 +21,10 @@ class Point {
     subtractPoint(point) {
         return new Vector(this.x - point.x, this.y - point.y);
     }
+
+    equals(point) {
+        return this.x === point.x && this.y === point.y;
+    }
 }
 
 module.exports = Point;

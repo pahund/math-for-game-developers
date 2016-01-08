@@ -1,8 +1,7 @@
 /**
- * lesson4.js
+ * Video 4: Distance Comparison
  *
- * Distance Comparison
- * https://www.youtube.com/watch?v=DxmGxkhhluU&index=4&list=PLW3Zl3wyJwWOpdhYedlD-yCB7WQoHf-My
+ * https://www.youtube.com/watch?v=DxmGxkhhluU
  *
  * @author <a href="https://github.com/pahund">Patrick Hund</a>
  * @since 08 Jan 2016

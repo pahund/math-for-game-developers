@@ -1,8 +1,7 @@
 /**
- * lesson2.js
+ * Video 2: Character Movement 2 (Subtracting Vectors)
  *
- * Character Movement 2 (Subtracting Vectors)
- * https://www.youtube.com/watch?v=WNaxtPTMqSo&index=2&list=PLW3Zl3wyJwWOpdhYedlD-yCB7WQoHf-My
+ * https://www.youtube.com/watch?v=WNaxtPTMqSo
  *
  * @author <a href="https://github.com/pahund">Patrick Hund</a>
  * @since 08 Jan 2016

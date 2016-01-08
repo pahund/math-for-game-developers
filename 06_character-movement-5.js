@@ -1,8 +1,7 @@
 /**
- * lesson6.js
+ * Video 6: Character Movement 5 (Unit-Length Vectors)
  *
- * Character Movement 5 (Unit-Length Vectors)
- * https://www.youtube.com/watch?v=hh-3xLawoYo&index=6&list=PLW3Zl3wyJwWOpdhYedlD-yCB7WQoHf-My
+ * https://www.youtube.com/watch?v=hh-3xLawoYo
  *
  * @author <a href="https://github.com/pahund">Patrick Hund</a>
  * @since 08 Jan 2016

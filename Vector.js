@@ -39,6 +39,16 @@ class Vector {
     divide(scale) {
         return new Vector(this.x / scale, this.y / scale);
     }
+
+    equals(vector) {
+        return this.x === vector.x && this.y === vector.y;
+    }
+
+    dotProduct(vector) {
+        const a = this.normalized,
+            b = vector.normalized;
+        return a.x * b.x + a.y * b.y;
+    }
 }
 
 module.exports = Vector;
