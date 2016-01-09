@@ -8,8 +8,8 @@
  */
 "use strict";
 
-const Vector = require("./Vector"),
-    Point = require("./Point"),
+const Vector = require("./math/Vector"),
+    Point = require("./math/Point"),
 
     p = new Point(1, 0),
     v = new Vector(2, 3),

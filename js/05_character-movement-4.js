@@ -8,7 +8,7 @@
  */
 "use strict";
 
-const Vector = require("./Vector"),
+const Vector = require("./math/Vector"),
 
     v = new Vector(3, 4),
     doubled = v.multiply(2),

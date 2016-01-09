@@ -9,8 +9,7 @@
  */
 "use strict";
 
-const Vector = require("./Vector"),
-    Point = require("./Point"),
+const Vector = require("./math/Vector"),
 
     hero = new Vector(3, 0),
     spy = new Vector(-3, 0),

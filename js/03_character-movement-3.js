@@ -8,7 +8,7 @@
  */
 "use strict";
 
-const Point = require("./Point"),
+const Point = require("./math/Point"),
 
     p = new Point(0, -1),
     i = new Point(1, 1),

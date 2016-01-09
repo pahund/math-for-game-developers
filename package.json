@@ -2,11 +2,16 @@
   "name": "math-for-game-developers",
   "version": "1.0.0",
   "description": "Code examples for using mathematics for game development",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "node node_modules/webpack/bin/webpack.js",
     "start": "node index.js"
   },
   "author": "Patrick Hund <wiekatz@gmail.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.4.0",
+    "babel-loader": "^6.2.1",
+    "babel-preset-es2015": "^6.3.13",
+    "webpack": "^1.12.10"
+  }
 }
