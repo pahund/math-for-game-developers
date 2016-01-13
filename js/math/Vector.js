@@ -24,6 +24,10 @@ class Vector {
         return new Vector(this.x / this.length, this.y / this.length);
     }
 
+    get angle() {
+        return Math.atan2(this.x, this.y) * 180 / Math.PI;
+    }
+
     add(vector) {
         return new Vector(this.x + vector.x, this.y + vector.y);
     }
