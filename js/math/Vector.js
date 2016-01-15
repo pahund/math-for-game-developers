@@ -58,6 +58,13 @@ class Vector {
         return a.x * b.x + a.y * b.y;
     }
 
+    approach(target, delta) {
+        return new Vector(
+            approach(target.x, this.x, delta),
+            approach(target.y, this.y, delta)
+        );
+    }
+
     static fromDeg(degrees) {
         return Vector.fromRad(degrees * (Math.PI / 180));
     }
@@ -65,6 +72,17 @@ class Vector {
     static fromRad(radians) {
         return new Vector(Math.sin(radians), Math.cos(radians));
     }
+}
+
+function approach(goal, current, dt) {
+    const difference = goal - current;
+    if (difference > dt) {
+        return current + dt;
+    }
+    if (difference < -dt) {
+        return current - dt;
+    }
+    return goal;
 }
 
 module.exports = Vector;

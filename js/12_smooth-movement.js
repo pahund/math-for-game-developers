@@ -8,6 +8,7 @@
  */
 import makeRenderer from "./setup/makeRenderer";
 import makeStage from "./setup/makeStage";
+import makeTimer from "./setup/makeTimer";
 import resizeManager from "./game/resizeManager";
 import Vector from "./math/Vector";
 import Point from "./math/Point";
@@ -36,28 +37,9 @@ marioSprite.anchor = {
 };
 stage.addChild(marioSprite);
 
-function getCurrentTime() {
-    return Date.now();
-}
-
 function update(dt) {
-    mario.velocity = new Vector(
-        approach(mario.velocityGoal.x, mario.velocity.x, dt * config.lerpSpeed),
-        approach(mario.velocityGoal.y, mario.velocity.y, dt * config.lerpSpeed)
-    );
-
+    mario.velocity = mario.velocity.approach(mario.velocityGoal, dt * config.lerpSpeed / 1000);
     mario.position = mario.position.addVector(mario.velocity.multiply(dt));
-}
-
-function approach(goal, current, dt) {
-    const difference = goal - current;
-    if (difference > dt) {
-        return current + dt;
-    }
-    if (difference < -dt) {
-        return current - dt;
-    }
-    return goal;
 }
 
 function draw() {
@@ -66,9 +48,6 @@ function draw() {
         y: mario.position.y
     };
 }
-
-let previousTime = 0,
-    currentTime = getCurrentTime();
 
 const keys = {
     up: keyboard(38),
@@ -85,32 +64,25 @@ function move(x, y) {
     mario.velocityGoal = new Vector(x, y);
 }
 
-keys.up.press = () => move(0, -100);
+keys.up.press = () => move(0, -1);
 keys.up.release = stop;
 
-keys.down.press = () => move(0, 100);
+keys.down.press = () => move(0, 1);
 keys.down.release = stop;
 
-keys.left.press = () => move(-100, 0);
+keys.left.press = () => move(-1, 0);
 keys.left.release = stop;
 
-keys.right.press = () => move(100, 0);
+keys.right.press = () => move(1, 0);
 keys.right.release = stop;
+
+const timer = makeTimer();
 
 // game loop
 (function animate() {
     requestAnimationFrame(animate);
 
-    previousTime = currentTime;
-    currentTime = getCurrentTime();
-
-    let dt = currentTime - previousTime;
-
-    if (dt > 0.15) {
-        dt = 0.15;
-    }
-
-    update(dt);
+    update(timer());
     draw();
 
     renderer.render(stage);

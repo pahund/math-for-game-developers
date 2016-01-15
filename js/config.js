@@ -12,6 +12,11 @@ export default {
         w: 2880,
         h: 1800,
     },
+
     margin: 100,
-    lerpSpeed: 33
+
+    // 1: sluggish ... 10: responsive
+    lerpSpeed: 5,
+
+    maxTimeDelta: 100
 };
