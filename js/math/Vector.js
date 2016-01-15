@@ -24,8 +24,12 @@ class Vector {
         return new Vector(this.x / this.length, this.y / this.length);
     }
 
-    get angle() {
-        return Math.atan2(this.x, this.y) * 180 / Math.PI;
+    get deg() {
+        return this.rad * 180 / Math.PI;
+    }
+
+    get rad() {
+        return Math.atan2(this.x, -this.y);
     }
 
     add(vector) {
@@ -52,6 +56,14 @@ class Vector {
         const a = this.normalized,
             b = vector.normalized;
         return a.x * b.x + a.y * b.y;
+    }
+
+    static fromDeg(degrees) {
+        return Vector.fromRad(degrees * (Math.PI / 180));
+    }
+
+    static fromRad(radians) {
+        return new Vector(Math.sin(radians), Math.cos(radians));
     }
 }
 
