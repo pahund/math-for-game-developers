@@ -12,5 +12,6 @@ export default {
         w: 2880,
         h: 1800,
     },
-    margin: 100
+    margin: 100,
+    lerpSpeed: 33
 };

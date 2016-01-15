@@ -17,4 +17,7 @@ The examples 1-9 you can simply run with Node.js, on the command line, e.g. type
 
     node js/01_character-movement.js
     
-Example 11 has graphics, you can run it in your browser by opening the HTML file.
+Examples 11 and onward have graphics, you can run them in your browser by opening the HTML file.
+
+When you make changes to the code of examples 11 and onwart, run npm install afterwards to see your changes in the
+browser, this will transpile the code to a webpack bundle.

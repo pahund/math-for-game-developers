@@ -10,7 +10,8 @@ const path = require("path"),
 module.exports = {
     context: path.resolve(__dirname, "js"),
     entry: {
-        bundle11: "./11_jumping-and-gravity"
+        bundle11: "./11_jumping-and-gravity",
+        bundle12: "./12_smooth-movement"
     },
     output: {
         path: path.resolve(__dirname, "dist"),
